@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshFruit | Fruits</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a href="index.html" class="brand" aria-label="FreshFruit home">
+          <span class="brand-mark">F</span>
+          <span>FreshFruit</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="fruits.html">Fruits</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="auth-logged-out"><a href="signin.html">Sign In</a></li>
+          <li class="auth-logged-out"><a href="signup.html">Sign Up</a></li>
+          <li class="auth-logged-in hidden"><a href="profile.html">Profile</a></li>
+          <li class="auth-logged-in hidden"><button class="nav-signout" type="button">Sign Out</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container page-header-inner">
+          <h1>Fruit Collection</h1>
+          <p>Browse fresh fruits with vibrant flavors, textures, and daily health benefits.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="fruit-tools">
+            <div class="search-box">
+              <input id="fruitSearch" type="search" placeholder="Search fruits, categories, or flavors..." aria-label="Search fruits, categories, or flavors" />
+            </div>
+            <div id="fruitResultCount" class="filter-summary">10 fruit(s) found</div>
+          </div>
+
+          <div id="fruitGrid" class="fruit-grid" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 FreshFruit.</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="benefits.html">Benefits</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
