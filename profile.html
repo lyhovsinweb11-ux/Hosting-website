@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshFruit | Profile</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a href="index.html" class="brand" aria-label="FreshFruit home">
+          <span class="brand-mark">F</span>
+          <span>FreshFruit</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="fruits.html">Fruits</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="auth-logged-out"><a href="signin.html">Sign In</a></li>
+          <li class="auth-logged-out"><a href="signup.html">Sign Up</a></li>
+          <li class="auth-logged-in hidden"><a href="profile.html">Profile</a></li>
+          <li class="auth-logged-in hidden"><button class="nav-signout" type="button">Sign Out</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container page-header-inner">
+          <h1>My Profile</h1>
+          <p>Manage your FreshFruit account and view account details.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container profile-grid">
+          <div id="profileSection" class="profile-card">
+            <div class="profile-header">
+              <div class="profile-avatar">👤</div>
+              <h2 id="profileName">Customer</h2>
+            </div>
+            <p><strong>Email:</strong> <span id="profileEmail">-</span></p>
+            <p style="margin-top: 12px;"><strong>Account Status:</strong> <span class="profile-status" id="profileStatus">Active</span></p>
+            <button id="profileSignOut" class="btn btn-primary" style="margin-top: 20px; width: 100%;">Sign Out</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 FreshFruit.</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="fruits.html">Fruits</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
